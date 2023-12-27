@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "distraction-catcher",
+    "version": "1.0",
+  
+    "description": "Adds a red border to all webpages matching reddit.com",
+  
+    "icons": {
+      "48": "icons/border-48.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.reddit.com/*"],
+        "js": ["borderify.js"]
+      }
+    ]
+  }
+  
